@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>限制输入字数</title>
+    <script>
+        window.onload = function () {
+            var title = document.getElementById('title');
+            title.onkeyup = function () {
+                setShowLength(this,15,'title_length');
+            }
+        }
+        function setShowLength(obj, maxlength, id)
+            {
+                var rem = maxlength - obj.value.length;
+                var wid = id;
+                if (rem < 0){
+                    rem = 0;
+                }
+                document.getElementById(wid).innerHTML = "还可以输入" + rem + "字数";
+            }
+
+    </script>
+</head>
+<body>
+<input id="title" type="text" value="" maxlength="15">
+<span class="red" id="title_length">还可以输入15字数</span>
+
+</body>
+</html>

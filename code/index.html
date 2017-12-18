@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!--设置浏览器兼容版本-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--兼容移动端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Bootstrap</title>
+    <!--引入图标-->
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+    <!--引入bootstarp的css文件-->
+    <link rel="stylesheet" href="lib/bootstrap-3.3.6-dist/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <!--低版本ie兼容-->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--头部区域开始-->
+<header id="header">
+    <div class="topbar hidden-sm hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#" class="mobie-link">
+                        <i class="icon-mobilephone"></i>
+                        <span>手机微金所</span>
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                        <img src="imgs/c_06.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <i class="icon-telephone"></i>
+                    <span>4006-89-4006(服务时间:9:00-21:00)</span>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">常见问题</a>
+                    <a href="#" >财富登录</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn-danger btn-sm">
+                        免费注册
+                    </a>
+                    <a href="#" class="btn btn-link btn-sm" data-toggle="modal" data-target="#login_form">登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="top-nav">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">切换按钮</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <i class="icon-icon"></i>
+                        <i class="icon-logo"></i>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">我要投资</a></li>
+                        <li><a href="#">我要借款</a></li>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">新手专区</a></li>
+                        <li><a href="#">最新动态</a></li>
+                        <li><a href="#">微论坛</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm">
+                        <li><a href="#">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--头部区域结束-->
+
+<!--轮播开始-->
+<section id="main_slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" data-image-lg="imgs/slide_01_2000x410.jpg" data-image-xs="imgs/slide_01_640x340.jpg"></div>
+            <div class="item" data-image-lg="imgs/slide_02_2000x410.jpg" data-image-xs="imgs/slide_02_640x340.jpg"></div>
+            <div class="item" data-image-lg="imgs/slide_03_2000x410.jpg" data-image-xs="imgs/slide_03_640x340.jpg"></div>
+            <div class="item" data-image-lg="imgs/slide_04_2000x410.jpg" data-image-xs="imgs/slide_04_640x340.jpg"></div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!--轮播结束-->
+
+<!--特色介绍开始-->
+<section id="description">
+<div class="container">
+    <div class="row hidden-xs">
+        <div class="col-md-4 col-sm-6">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            支付交易保障
+                        </h4>
+                        <p>银联支付全程保障支付安全</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            支付交易保障
+                        </h4>
+                        <p>银联支付全程保障支付安全</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            支付交易保障
+                        </h4>
+                        <p>银联支付全程保障支付安全</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            支付交易保障
+                        </h4>
+                        <p>银联支付全程保障支付安全</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            支付交易保障
+                        </h4>
+                        <p>银联支付全程保障支付安全</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            支付交易保障
+                        </h4>
+                        <p>银联支付全程保障支付安全</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+<!--特色介绍结束-->
+
+<!--立即预约-->
+<section id="yuyue">
+    <div class="container">
+        <p class="pull-left"><i class="icon-uniE906"></i>现在有<span>458</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？ <a href="#">立即预约</a></p>
+        <p class="pull-right hidden-sm hidden-xs"><a href="#"><i class="icon-uniE905"></i> 微金所企业宣传片</a></p>
+    </div>
+</section>
+<!--预约结束-->
+
+<!--产品开始-->
+<section id="products">
+    <div class="container">
+        <!-- 标题栏 -->
+        <div class="ul-scroll">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">特别推荐</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">微小宝</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">微投资</a></li>
+                <li role="presentation"><a href="#shoping" aria-controls="shoping" role="tab" data-toggle="tab">微消费</a></li>
+                <li role="presentation"><a href="#zengli" aria-controls="zengli" role="tab" data-toggle="tab">微曾利</a></li>
+                <li role="presentation"><a href="#jinbao" aria-controls="jinbao" role="tab" data-toggle="tab">微金宝</a></li>
+                <li role="presentation"><a href="#change" aria-controls="change" role="tab" data-toggle="tab">微转让</a></li>
+                <li class="pull-right hidden-sm hidden-xs"><a href="#">更多&nbsp&nbsp&nbsp》</a></li>
+            </ul>
+        </div>
+
+        <!-- 选项卡内容 -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="panel panel-czbk actived">
+                            <div class="panel-heading">
+                                <p><strong>8</strong><sub>%</sub></p>
+                                <p><span>年利率</span></p>
+                            </div>
+                            <div class="panel-body">
+                                <h4>新手体验表0008期</h4>
+                                <div class="row">
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="colxs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="panel panel-czbk already">
+                            <div class="panel-heading">
+                                <p class="tooltips">
+                                    <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                    <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                                </p>
+                                <p><strong>8</strong><sub>%</sub></p>
+                                <p><span>年利率</span></p>
+                            </div>
+                            <div class="panel-body">
+                                <h4>新手体验表0008期</h4>
+                                <div class="row">
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="panel panel-czbk">
+                            <div class="panel-heading">
+                                <p class="tooltips">
+                                    <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                    <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                                </p>
+                                <p><strong>8</strong><sub>%</sub></p>
+                                <p><span>年利率</span></p>
+                            </div>
+                            <div class="panel-body">
+                                <h4>新手体验表0008期</h4>
+                                <div class="row">
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                        <div class="panel panel-czbk">
+                            <div class="panel-heading">
+                                <p class="tooltips">
+                                    <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                    <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                                </p>
+                                <p><strong>8</strong><sub>%</sub></p>
+                                <p><span>年利率</span></p>
+                            </div>
+                            <div class="panel-body">
+                                <h4>新手体验表0008期</h4>
+                                <div class="row">
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                        <div class="panel panel-czbk">
+                            <div class="panel-heading">
+                                <p class="tooltips">
+                                    <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                    <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                                </p>
+                                <p><strong>8</strong><sub>%</sub></p>
+                                <p><span>年利率</span></p>
+                            </div>
+                            <div class="panel-body">
+                                <h4>新手体验表0008期</h4>
+                                <div class="row">
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                        <div class="panel panel-czbk">
+                            <div class="panel-heading">
+                                <p class="tooltips">
+                                    <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                    <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                                </p>
+                                <p><strong>8</strong><sub>%</sub></p>
+                                <p><span>年利率</span></p>
+                            </div>
+                            <div class="panel-body">
+                                <h4>新手体验表0008期</h4>
+                                <div class="row">
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-left">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <p>起步价</p>
+                                        <p><strong>1000.00</strong><sub>万</sub></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile"><div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk actived">
+                        <div class="panel-heading">
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="colxs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk already">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div role="tabpanel" class="tab-pane fade" id="messages"><div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk actived">
+                        <div class="panel-heading">
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="colxs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk already">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div role="tabpanel" class="tab-pane fade" id="shoping"><div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk actived">
+                        <div class="panel-heading">
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="colxs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk already">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div role="tabpanel" class="tab-pane fade" id="zengli"><div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk actived">
+                        <div class="panel-heading">
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="colxs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk already">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div role="tabpanel" class="tab-pane fade" id="jinbao"><div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk actived">
+                        <div class="panel-heading">
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="colxs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk already">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div role="tabpanel" class="tab-pane fade" id="change"><div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk actived">
+                        <div class="panel-heading">
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="colxs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk already">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hidden-xs">
+                    <div class="panel panel-czbk">
+                        <div class="panel-heading">
+                            <p class="tooltips">
+                                <a class="bage-left" href="#" data-toggle="tooltip" data-placement="top" title="北京市">京</a>
+                                <a class="bage-right" href="#" data-toggle="tooltip" data-placement="top" title="上海市">沪</a>
+                            </p>
+                            <p><strong>8</strong><sub>%</sub></p>
+                            <p><span>年利率</span></p>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验表0008期</h4>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-left">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <p>起步价</p>
+                                    <p><strong>1000.00</strong><sub>万</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+
+    </div>
+</section>
+<!--产品结束-->
+
+<!--新闻开始-->
+<section id="news">
+    <div class="contanier">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-3">
+                <div class="newstitle">
+                    全部新闻
+                </div>
+            </div>
+            <div class="col-md-1">
+                <ul class="nav nav-pills">
+                    <li role="presentation"  class="active"><a data-title="全部新闻" href="#news01" role="tab" data-toggle="tab"><i class="icon-news01"></i></a></li>
+                    <li role="presentation" ><a data-title="媒体新闻" href="#news02" role="tab" data-toggle="tab"><i class="icon-news03"></i></a></li>
+                    <li role="presentation" ><a data-title="行业新闻" href="#news03" role="tab" data-toggle="tab"><i class="icon-news04"></i></a></li>
+                    <li role="presentation" ><a data-title="测试新闻" href="#news04" role="tab" data-toggle="tab"><i class="icon-news04"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="news01">
+                        <ul>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                            <li>dgkalkjddhdjjdkddldldddad1</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news02">
+                        <ul>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                            <li>dgkalkjddhdjjdkddldldddad2</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news03">
+                        <ul>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                            <li>dgkalkjddhdjjdkddldldddad3</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news04">
+                        <ul>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                            <li>dgkalkjddhdjjdkddldldddad4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--新闻结束-->
+
+<!--合作伙伴开始-->
+<section id="hzhb" class="hidden-sm hidden-xs">
+    <h3>合作伙伴</h3>
+    <ul class="center-block">
+        <li><a href="#"><i class="icon-uniE930"></i></a></li>
+        <li><a href="#"><i class="icon-uniE92F"></i></a></li>
+        <li><a href="#"><i class="icon-uniE92E"></i></a></li>
+        <li><a href="#"><i class="icon-uniE92A"></i></a></li>
+        <li><a href="#"><i class="icon-uniE929"></i></a></li>
+        <li><a href="#"><i class="icon-uniE931"></i></a></li>
+        <li><a href="#"><i class="icon-uniE92C"></i></a></li>
+        <li><a href="#"><i class="icon-uniE92B"></i></a></li>
+        <li><a href="#"><i class="icon-uniE92D"></i></a></li>
+    </ul>
+    </div>
+</section>
+<!--合作伙伴结束-->
+
+<!--模态框-->
+<div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="login_form_title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="login_form_title">登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="checked"> 记住账号
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">登录</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--侧边栏-->
+<div class="subNav">
+    <div class="back"></div>
+    <i>返回</i>
+</div>
+
+<!--引用jquery-->
+<script src="lib/jquery/jquery.min.js"></script>
+<!--引入bootstarp的js文件-->
+<script src="lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<!--引入自己的js文件-->
+<script src="js/my.js"></script>
+<!--自定义的css文件-->
+<link rel="stylesheet" href="css/main.css">
+</body>
+</html>
